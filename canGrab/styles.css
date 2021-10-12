@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #0f3a02;
+  display: flex;
+  padding-top: 5rem;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.col-header {
+  width: 150px;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 20px;
+  padding: 0.8rem 1rem;
+  color: rgba(255, 255, 255, 0.863);
+}
+
+.item {
+  height: 66px;  
+  width: 150px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.863);
+  border-radius: 20px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.863);
+  background: rgb(180, 64, 64);
+  padding: 0.8rem 1rem;
+  text-align: center;
+  cursor: grab;
+
+}
+
+.item:active {
+  cursor: grabbing;
+}
+
+.placeholder {
+  width: 150px;
+  height: 66px;
+}
+
+.start {
+  background: linear-gradient(0deg, rgb(180, 64, 64) 0%,#eeff00   100%);
+}
+
+.progress {
+  background: linear-gradient(0deg, rgb(180, 64, 64) 0%,#eeff00 100%);
+}
+
+.done {
+  background: linear-gradient(0deg, rgb(180, 64, 64) 0%,#eeff00 100%);
+}
+
+.hold{
+  font-size: 18px;
+  background: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: 10px 10px 3px #532f0d;
+}
+
+.hide{
+  display: none;
+}
+
+.hovered{
+  transition:  height 2s;
+  height: 300px;
+  border-top: 10px solid #532f0d;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Lion_Rampant.svg/1200px-Lion_Rampant.svg.png') center/contain no-repeat, rgb(180, 64, 64);
+  border-radius: 0 0 20px 20px;
+}
